@@ -9,6 +9,29 @@
 
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    margin-top: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     color: var(--text-color);
 
@@ -16,12 +39,22 @@ body {
     font-style: normal;
     letter-spacing: 0.03em;
 }
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
     color: var(--headers-color);
+}
+
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .list{
     list-style: none;
+    margin: 0;
+    padding: 0;
     
 }
 .link{
@@ -32,6 +65,7 @@ h1,h2,h3,h4,h5,h6 {
 .logo-accent{
     color: var(--accent-color);
 }
+
 .logo{
     color: var(--headers-color);
 
@@ -39,12 +73,18 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19; 
+
+    display: inline-block;
+    margin-top: 24px;
+    margin-bottom: 25px;
      
 }
 .menu-item {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+
+  
    
 }
 
@@ -82,6 +122,8 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    margin-bottom: 30px;
 }
 .hero-button{
     color: var(--background-whitetext-color);
@@ -94,6 +136,7 @@ h1,h2,h3,h4,h5,h6 {
     
     text-align: center;
     letter-spacing: 0.06em;
+
     
 }
 .hero-button:focus,
@@ -110,6 +153,9 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+
+
+    margin-bottom: 10px;
 }
 
 
@@ -132,6 +178,8 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+
+    margin-bottom: 50px;
 }
 
 
@@ -142,6 +190,8 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+
+    margin-bottom: 50px;
 
 }
 
@@ -155,6 +205,9 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 16px;
     line-height: 1.18; 
     text-align: center;
+
+
+    margin-bottom: 10px;
 }
 
 
@@ -174,7 +227,17 @@ h1,h2,h3,h4,h5,h6 {
 }
 .logo-footer{
     color: var(--background-whitetext-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    
+    display: inline-block;
+
+    margin-bottom: 20px;
+    margin-top: 60px;
 }
+
 .adress-text{
     color: var(--background-whitetext-color);
 }
@@ -198,7 +261,9 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1.71;
 
 }
-
+.footer-item:not(:last-child){
+    margin-bottom: 9px;
+}
 
 /*////////////////// стили портфолио //////////////////// */
 
@@ -227,6 +292,10 @@ h1,h2,h3,h4,h5,h6 {
 .portfolio-button {
     cursor: pointer;
 }
+.portfolio-photo{
+    display: inline-block;
+    margin-bottom: 20px;
+}
 
 .names-galery{
     
@@ -234,7 +303,9 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-;
+
+    margin-bottom: 4px;
+
 }
 
 
