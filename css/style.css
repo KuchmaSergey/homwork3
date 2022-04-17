@@ -61,7 +61,17 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
+
+/* навигация хедера */
+.main-nav{
+    display: flex;
+    align-items: center;
+    
+}
+
 /* логотип компании */
+
+
 .logo-accent{
     color: var(--accent-color);
 }
@@ -79,18 +89,35 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 25px;
      
 }
+.site-nav{
+    display: inline-flex;
+    margin-left: 93px;
+    
+}
+.auth-nav{
+    display: inline-flex;
+}
 .menu-item {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
 
-  
+    
    
+}
+.menu-item:not(:last-child){
+    margin-right: 50px;
 }
 
 /* навигация ссылок */
 .link-nav {
+    display: block;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
     color: var(--headers-color);
+
+
 }
 .current{
     color: var(--accent-color);
@@ -100,6 +127,10 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--accent-color);
 }
 .link-contact{
+    display: block;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
     color: inherit;
 }
 .link-contact:hover,
