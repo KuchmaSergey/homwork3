@@ -96,6 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .auth-nav{
     display: inline-flex;
+    margin-left: auto;
 }
 .menu-item {
     font-weight: 500;
@@ -140,6 +141,11 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* секция героя */
+.hero-container{
+    margin-bottom: 94px;
+}
+
+
 .hero{
     background-color: var(--background-durk-color);
 }
@@ -178,6 +184,17 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
+.stronges-cotainer{
+    margin-bottom: 94px;
+}
+.our-stronges{
+    display: flex;
+}
+
+.stronges-item:not(:last-child){
+    margin-right: 30px;
+}
+
 .page-stronges {
 
     font-weight: 700;
@@ -202,19 +219,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* секция чем мы занимаемся */
+.whatwedo-container{
+    margin-bottom: 94px;
+}
+.whatwedo-list{
+    display: flex;
+}
+.whatwedo-item:not(:last-child){
+    margin-right: 30px;
+}
+
+
 .what-we-do{
-    
-    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
 
+    
     margin-bottom: 50px;
 }
 
 
 /* секция наша команда */
+тут закончил продолжить здесь
+.team-container{
+    padding-bottom: ;: 94px;
+}
+
 .team{
     
     font-weight: 700;
@@ -222,8 +254,17 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.16;
     text-align: center;
 
+    padding-top: 94px;
     margin-bottom: 50px;
 
+}
+
+.team-list{
+    display: flex;
+    
+}
+.team-item:not(:last-child){
+    margin-right: 30px;
 }
 
 .our-team {
@@ -323,9 +364,23 @@ h1, h2, h3, h4, h5, h6 {
 .portfolio-button {
     cursor: pointer;
 }
+
+
+.wrap-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    
+}
+
+
+
+
 .portfolio-photo{
-    display: inline-block;
-    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 3 - 30px)
 }
 
 .names-galery{
