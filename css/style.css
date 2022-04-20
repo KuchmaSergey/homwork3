@@ -18,6 +18,7 @@ html {
 *::after {
     box-sizing: inherit;
 }
+           /* утилиты................... */
 h1,
 h2,
 h3,
@@ -31,7 +32,16 @@ img {
     max-width: 100%;
     height: auto;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--headers-color);
+}
 
+       /* глобальные стили и сбросы стилей */
 body {
     color: var(--text-color);
 
@@ -39,9 +49,7 @@ body {
     font-style: normal;
     letter-spacing: 0.03em;
 }
-h1, h2, h3, h4, h5, h6 {
-    color: var(--headers-color);
-}
+
 
 .container{
     width: 1200px;
@@ -61,6 +69,7 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
+                    /* основые стили */
 
 /* навигация хедера */
 .main-nav{
@@ -141,35 +150,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* секция героя */
-.hero-container{
+
+.content-box{
     text-align: center;
-    margin-bottom: 94px;
-    
-    
-
-
-    
 }
 
+                 /* стили героя */
 
 .hero{
     background-color: var(--background-durk-color);
-    margin-bottom: 94px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
 }
+
 .hero-content{
     text-align: center;
 }
 .hero-header{
      color: var(--background-whitetext-color);
+
+    margin-bottom: 30px;
+    max-width: 696px;
     
-    font-weight: 900;
     font-size: 44px;
+    font-weight: 900;
     line-height: 1.36;
-    
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .hero-button{
@@ -177,6 +187,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: aqua;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    padding: 10px 32px;
 
 
     font-weight: 700;
@@ -196,8 +207,12 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
+
+            /* стили плюсов компании */
+
 .stronges-cotainer{
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .our-stronges{
     display: flex;
@@ -220,7 +235,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/* секция что мы делаем */
 .text-strong {
     color: var(--text-color);
 
@@ -230,9 +244,12 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.71;
 }
 
+
 /* секция чем мы занимаемся */
+
+
 .whatwedo-container{
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 .whatwedo-list{
     display: flex;
@@ -402,14 +419,7 @@ h1, h2, h3, h4, h5, h6 {
     0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
-/* .btn-portfolio{
 
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-} */
 .portfolio-button {
     cursor: pointer;
 }
@@ -422,9 +432,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: -30px;
     
 }
-
-
-
 
 .portfolio-photo{
     margin-left: 30px;
@@ -449,8 +456,6 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 24px;
 
 }
-
-
 .name {
     color: var(--text-color);
 
